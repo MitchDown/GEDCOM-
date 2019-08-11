@@ -380,20 +380,18 @@ while line != '':# end loop when file is empty
 	else:	# skip lines until next candidate 0-level line
 		line = f.readline()
 
-'''
 # Optionally print out all information stored about individuals
-for ref in sorted(persons.keys()):
-	print(ref+':', persons[ref])
+#for ref in sorted(persons.keys()):
+#	print(ref+':', persons[ref])
 
 # Optionally print out all information stored about families
-for ref in sorted(families.keys()):
-	print(ref+':', families[ref])
+#for ref in sorted(families.keys()):
+#	print(ref+':', families[ref])
 
-##person = "I46"# Default selection to work with Kennedy.ged file
-### Uncomment the next line to make the program interactive
+
 person = input("Enter person ID for descendants chart:")
 
-persons[person].printDescendants()'''
+persons[person].printDescendants()
 
 import GEDtest
 GEDtest.runtests(persons,families)
